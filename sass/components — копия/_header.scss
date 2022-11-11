@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  align-items: center;
+  //*^^^^^^^^Можливо потрыбно буде написати до.container
+  border-bottom: 1px solid #ececec;
+}
+
+.nav {
+  display: flex;
+  &__list {
+    display: flex;
+    margin-left: 93px;
+  }
+  &__item {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+  &__link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__icon {
+    fill: $text-color;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}

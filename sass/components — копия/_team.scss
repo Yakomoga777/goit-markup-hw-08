@@ -1,0 +1,78 @@
+.team {
+  background-color: $section-team-background-color;
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    background: $background-card-clor;
+    // /* material shadow v1 */
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__img {
+  }
+}
+
+// .team__title {
+// }
+.team__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+// .team__item {
+// }
+// .team__img {
+// }
+.info {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.info__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.info__text {
+  font-size: 16px;
+  line-height: 1.19;
+  color: $text-color;
+}
+.socials__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+.socials__item {
+  width: 44px;
+  height: 44px;
+}
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  fill: $social-icon-color;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $social-icon-changed-color;
+  }
+}

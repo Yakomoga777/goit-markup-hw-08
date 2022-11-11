@@ -1,0 +1,39 @@
+.products {
+  padding-top: 0;
+
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    position: relative;
+    display: block;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  background-color: $overlay-background-works-color;
+
+  outline: var(--outline);
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+
+  text-transform: uppercase;
+  color: $overlay-background-text-color;
+}
