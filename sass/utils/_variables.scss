@@ -9,7 +9,7 @@ $features-card-color: #f5f4fa;
 $section-team-background-color: #f5f4fa;
 $footer-background-color: #2f303a;
 $address-color: rgba(255, 255, 255, 0.6);
-$outline: 0px solid tomato;
+$outline: 1px solid tomato;
 $logo-black-color: #000000;
 $hover-hero-btn-color: #188ce8;
 $social-icon-color: #afb1b8;
@@ -20,6 +20,7 @@ $overlay-background-text-color: #ffffff;
 $social-icon-changed-color: #ffffff;
 $customers-icon-color: #afb1b8;
 $modal-color: #ffffff;
+$mobile-menu-color: #ffffff;
 
 $overlay-background-portfolio-color: rgba(33, 150, 243, 0.9);
 $backdrop-color: #00000033;
@@ -110,15 +111,46 @@ footer {
 }
 
 .container {
-  /* ------------------- */
-
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 
   outline: $outline;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 320px) {
+    width: 320px;
+  }
+  // @media screen and (min-width: 480px) {
+  //   position: relative;
+  //   // width: 100%;
+  //   min-width: 320px;
+  // }
+  // @media screen and (max-width: 320px) {
+  //   min-width: 320px;
+  // }
+  // @media screen and (min-width: 481px) and (max-width: 768px) {
+  //   width: 768px;
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+
+  //   outline: $outline;
+  // }
+  /* ------------------- */
+
+  // width: 1200px;
+  // padding-left: 15px;
+  // padding-right: 15px;
+  // margin-left: auto;
+  // margin-right: auto;
+
+  // outline: $outline;
 }
 
 .backdrop.is-hidden {
