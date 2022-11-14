@@ -10,3 +10,9 @@
     color: $logo-black-color;
   }
 }
+.header__logo {
+  @media screen and(max-width:767px) {
+    display: inline-block;
+    padding: 16px 0;
+  }
+}

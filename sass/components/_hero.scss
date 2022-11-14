@@ -1,0 +1,36 @@
+.hero {
+  height: 400px;
+  width: 100%;
+  padding: 118px 60px;
+
+  background-color: $footer-background-color;
+}
+.container {
+}
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $hero-title-color;
+}
+.hero__btn {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $hero-btn-color;
+
+  background-color: $accent-color;
+}

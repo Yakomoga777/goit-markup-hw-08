@@ -121,36 +121,12 @@ footer {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
-
-  @media screen and (min-width: 0px) and (max-width: 320px) {
-    width: 320px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-  // @media screen and (min-width: 480px) {
-  //   position: relative;
-  //   // width: 100%;
-  //   min-width: 320px;
-  // }
-  // @media screen and (max-width: 320px) {
-  //   min-width: 320px;
-  // }
-  // @media screen and (min-width: 481px) and (max-width: 768px) {
-  //   width: 768px;
-  //   padding-left: 15px;
-  //   padding-right: 15px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-
-  //   outline: $outline;
-  // }
-  /* ------------------- */
-
-  // width: 1200px;
-  // padding-left: 15px;
-  // padding-right: 15px;
-  // margin-left: auto;
-  // margin-right: auto;
-
-  // outline: $outline;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -176,5 +152,8 @@ footer {
   }
 }
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
