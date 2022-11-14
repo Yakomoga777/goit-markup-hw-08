@@ -349,4 +349,76 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.products {
+  display: none;
+}
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team__item {
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__img {
+  width: 100%;
+}
+
+.info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.info__title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.info__text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.socials__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.socials__icon {
+  fill: #afb1b8;
 }/*# sourceMappingURL=main.css.map */
