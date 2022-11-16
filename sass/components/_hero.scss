@@ -1,7 +1,13 @@
 .hero {
+  // display: none;
   height: 400px;
   width: 100%;
-  padding: 118px 60px;
+  padding: 118px 0;
+
+  background-image: url(../images/mobile_hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   background-color: $footer-background-color;
 }

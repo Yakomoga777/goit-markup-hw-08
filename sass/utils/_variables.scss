@@ -11,6 +11,7 @@ $footer-background-color: #2f303a;
 $address-color: rgba(255, 255, 255, 0.6);
 $outline: 1px solid tomato;
 $logo-black-color: #000000;
+$logo-white-color: #ffffff;
 $hover-hero-btn-color: #188ce8;
 $social-icon-color: #afb1b8;
 $background-icon-footer-color: #ffffff1a;
@@ -115,6 +116,7 @@ footer {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 320px;
 
   outline: $outline;
 
