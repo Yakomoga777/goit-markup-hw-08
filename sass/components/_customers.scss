@@ -20,9 +20,13 @@
   @media screen and (max-width: 480px) {
     justify-content: center;
   }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .customers__item {
 }
+
 .customers__link {
   display: flex;
   justify-content: center;
@@ -32,7 +36,20 @@
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-.customers__icon {
   fill: $customers-icon-color;
+
+  transition-property: fill border;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+    outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 170px;
+  }
 }

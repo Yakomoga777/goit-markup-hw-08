@@ -1,15 +1,49 @@
 .hero {
   // display: none;
-  height: 400px;
-  width: 100%;
+  max-width: 480px;
   padding: 118px 0;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-image: url(../images/mobile_hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/mobile_hero.jpg);
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
   background-color: $footer-background-color;
+
+  @include retina-2 {
+    background-image: url(../images/hero/mobile_hero@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/tablet_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include retina-2 {
+      background-image: url(../images/hero/tablet_hero@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/desktop_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include retina-2 {
+      background-image: url(../images/hero/desktop_hero@2x.jpg);
+    }
+  }
 }
 .container {
 }
@@ -23,7 +57,24 @@
   text-transform: uppercase;
 
   color: $hero-title-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $white-color;
+  }
 }
+
 .hero__btn {
   margin-top: 30px;
   margin-left: auto;
@@ -39,4 +90,12 @@
   color: $hero-btn-color;
 
   background-color: $accent-color;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+  &:hover,
+  &:focus {
+    background-color: $hover-hero-btn-color;
+  }
 }

@@ -13,3 +13,17 @@
     @content;
   }
 }
+@mixin transitions($property) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+}
+
+@mixin retina-2 {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}

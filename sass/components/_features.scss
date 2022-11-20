@@ -2,11 +2,16 @@
 }
 
 .features__list {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
 }
 .features__item {
-  display: block;
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and(min-width:768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
   }
 }
 .icon-container {

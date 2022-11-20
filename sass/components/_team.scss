@@ -11,6 +11,9 @@
   color: $title-color;
 }
 .team__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team__item {
   background: #ffffff;
@@ -22,6 +25,12 @@
 }
 .team__img {
   width: 100%;
+  @media screen and(min-width:768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+  }
 }
 .info {
   padding-top: 30px;
@@ -64,7 +73,24 @@
   height: 44px;
 
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .socials__icon,
+  &:focus .socials__icon {
+    fill: $social-icon-changed-color;
+  }
 }
 .socials__icon {
   fill: $social-icon-color;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
 }
