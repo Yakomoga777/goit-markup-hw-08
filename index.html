@@ -22,6 +22,20 @@
         <a href="./index.html" class="header__logo logo"
           >Web<span class="logo logo--studio">Studio</span>
         </a>
+        <button class="button__menu js-open-menu" type="button" data-menu-button>
+          <svg
+            class="button__icon icon"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use class="icon__menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            <!-- <use
+                  class="icon__cross js-close-menu"
+                  href="./images/symbol-defs.svg#icon-close_menu"
+                ></use> -->
+          </svg>
+        </button>
         <div class="nav-wrap js-menu-container">
           <nav class="nav">
             <ul class="nav__list">
@@ -35,21 +49,18 @@
                 <a class="nav__link" href="#">Контакти</a>
               </li>
             </ul>
-            <button class="nav__button button__menu is-open" type="button" data-menu-button>
+            <button class="nav__button js-close-menu" type="button" data-menu-button>
               <svg
                 class="button__icon icon"
                 width="40"
                 height="40"
                 aria-label="Перемикач мобільного меню"
               >
-                <use
-                  class="icon__menu js-open-menu"
-                  href="./images/symbol-defs.svg#icon-menu"
-                ></use>
-                <use
+                <use class="icon__menu" href="./images/symbol-defs.svg#icon-close_menu"></use>
+                <!-- <use
                   class="icon__cross js-close-menu"
                   href="./images/symbol-defs.svg#icon-close_menu"
-                ></use>
+                ></use> -->
               </svg>
             </button>
           </nav>
