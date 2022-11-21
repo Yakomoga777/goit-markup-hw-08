@@ -114,6 +114,7 @@ footer {
 .current {
   color: #2196f3;
 }
+
 .current::after {
   position: absolute;
   bottom: 0%;
@@ -207,13 +208,14 @@ footer {
 }
 
 .nav__link {
-  display: block;
+  position: relative;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .nav__link {
+    display: inline-block;
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
@@ -224,6 +226,7 @@ footer {
 }
 @media screen and (max-width: 767px) {
   .nav__link {
+    display: block;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.175;
@@ -994,8 +997,11 @@ footer {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 450px;
-  height: 609px;
+  height: 95%;
+  width: 95%;
+  max-height: 609px;
+  max-width: 450px;
+  overflow: scroll;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1132,7 +1138,8 @@ footer {
 
 .checkbox__label {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  margin-left: 24px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
