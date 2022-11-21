@@ -99,7 +99,8 @@
   transition-duration: 250ms;
   transition-timing-function: $cubic;
 
-  &:focus + .form__icon {
+  &:focus + .form__icon,
+  &:hover + .form__icon {
     fill: $accent-color;
   }
   &:focus,
@@ -148,7 +149,8 @@
       top: 4px;
     }
   }
-  &:focus + .checkbox__icon {
+  &:focus + .checkbox__icon,
+  &:hover + .checkbox__icon {
     background-origin: border-box;
     border: 2px solid $accent-color;
     border-radius: 2px;

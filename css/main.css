@@ -1065,7 +1065,7 @@ footer {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:focus + .form__icon {
+.form__input:focus + .form__icon, .form__input:hover + .form__icon {
   fill: #2196f3;
 }
 .form__input:focus, .form__input:hover {
@@ -1112,7 +1112,7 @@ footer {
     top: 4px;
   }
 }
-.checkbox:focus + .checkbox__icon {
+.checkbox:focus + .checkbox__icon, .checkbox:hover + .checkbox__icon {
   background-origin: border-box;
   border: 2px solid #2196f3;
   border-radius: 2px;
