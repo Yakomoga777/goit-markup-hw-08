@@ -1,0 +1,24 @@
+.filter__list {
+  display: flex;
+  gap: 15px 8px;
+
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.filter__item {
+}
+.filter__btn {
+  height: 38px;
+  padding: 6px 22px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-color;
+}
+.btn {
+}
