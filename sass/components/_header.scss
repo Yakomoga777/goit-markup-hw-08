@@ -140,7 +140,7 @@
   width: 40px;
   height: 40px;
   // border: none;
-  // background-color: transparent;
+  background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -152,19 +152,24 @@
   }
 }
 .contact {
-  display: inline-block;
+  display: flex;
   margin-bottom: 64px;
+  flex-direction: column-reverse;
   @media screen and(min-width:768px) {
     display: block;
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
+  }
+}
+.contact__item:last-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
   }
 }
 .contact__item:not(:last-child) {
-  margin-bottom: 32px;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
   }
@@ -179,6 +184,7 @@
 .contact__link {
   font-weight: 500;
   line-height: 1.17;
+
   letter-spacing: 0.02em;
 
   color: $accent-color;
@@ -187,9 +193,9 @@
   transition-duration: 250ms;
   transition-timing-function: $cubic;
   &.mail {
-    font-size: 34px;
-    line-height: calc(40 / 34);
-    color: $accent-color;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    color: $text-color;
 
     @media screen and (min-width: 768px) {
       font-size: 12px;
@@ -204,9 +210,9 @@
     }
   }
   &.tel {
-    font-size: 24px;
-    line-height: calc(24 / 28);
-    color: $text-color;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    color: $accent-color;
 
     @media screen and (min-width: 768px) {
       font-size: 12px;
@@ -243,6 +249,7 @@
 
 .contact__icon {
   display: none;
+  fill: $text-color;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -260,7 +267,8 @@
 
 .menu-social__list {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -269,6 +277,10 @@
 
 .menu-social__item {
   margin-top: auto;
+  padding-right: 10px;
+}
+.menu-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .menu-social__link {
   font-weight: 500;
@@ -278,6 +290,6 @@
 
   color: $accent-color;
 }
-.contact__icon {
-  // display: none;
+.js-close-menu {
+  background-color: transparent;
 }

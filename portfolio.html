@@ -106,7 +106,7 @@
     <main>
       <section class="filter section">
         <h1 class="filter__title visually-hidden">Портфоліо</h1>
-        <!-- ПАРАМЕТРИ ФІЛЬТРА -->
+        <!-- PORTFOLIO FILTER -->
         <div class="container">
           <ul class="filter__list">
             <li class="filter__item">
@@ -125,17 +125,44 @@
               <button class="filter__btn btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <!-- ПРКЛАДИ РОБІТ -->
+          <!-- PORTFOLIO -->
           <ul class="works__list">
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img1.jpg"
-                    alt="Веб-сайт на ноутбуці"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_1.webp    1x,
+                        ./images/portfolio/imgdeskstop_1@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_1@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_1.webp    1x,
+                        ./images/portfolio/imgtab_1@2x.webp 2x,
+                        ./images/portfolio/imgtab_1@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_1.jpg    1x,
+                        ./images/portfolio/imgmobile_1@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_1@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_1.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -151,12 +178,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img2.jpg"
-                    alt="Графічне зображення баскетболістів"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_2.webp    1x,
+                        ./images/portfolio/imgdeskstop_2@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_2@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_2.webp    1x,
+                        ./images/portfolio/imgtab_2@2x.webp 2x,
+                        ./images/portfolio/imgtab_2@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_2.jpg    1x,
+                        ./images/portfolio/imgmobile_2@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_2@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_2.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -172,12 +225,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img3.jpg"
-                    alt="Логотип ресторану"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_3.webp    1x,
+                        ./images/portfolio/imgdeskstop_3@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_3@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_3.webp    1x,
+                        ./images/portfolio/imgtab_3@2x.webp 2x,
+                        ./images/portfolio/imgtab_3@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_3.jpg    1x,
+                        ./images/portfolio/imgmobile_3@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_3@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_3.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -193,12 +272,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img4.jpg"
-                    alt="Навушники"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_4.webp    1x,
+                        ./images/portfolio/imgdeskstop_4@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_4@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_4.webp    1x,
+                        ./images/portfolio/imgtab_4@2x.webp 2x,
+                        ./images/portfolio/imgtab_4@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_4.jpg    1x,
+                        ./images/portfolio/imgmobile_4@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_4@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_4.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -214,12 +319,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img5.jpg"
-                    alt="Дизайни коробок"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_5.webp    1x,
+                        ./images/portfolio/imgdeskstop_5@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_5@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_5.webp    1x,
+                        ./images/portfolio/imgtab_5@2x.webp 2x,
+                        ./images/portfolio/imgtab_5@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_5.jpg    1x,
+                        ./images/portfolio/imgmobile_5@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_5@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_5.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -235,12 +366,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img6.jpg"
-                    alt="Вебсайт на моніторі"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_6.webp    1x,
+                        ./images/portfolio/imgdeskstop_6@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_6@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_6.webp    1x,
+                        ./images/portfolio/imgtab_6@2x.webp 2x,
+                        ./images/portfolio/imgtab_6@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_6.jpg    1x,
+                        ./images/portfolio/imgmobile_6@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_6@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_6.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -256,12 +413,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img7.jpg"
-                    alt="Книжка"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_7.webp    1x,
+                        ./images/portfolio/imgdeskstop_7@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_7@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_7.webp    1x,
+                        ./images/portfolio/imgtab_7@2x.webp 2x,
+                        ./images/portfolio/imgtab_7@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_7.jpg    1x,
+                        ./images/portfolio/imgmobile_7@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_7@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_7.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -277,12 +460,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img8.jpg"
-                    alt="Логотип компанії"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_8.webp    1x,
+                        ./images/portfolio/imgdeskstop_8@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_8@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_8.webp    1x,
+                        ./images/portfolio/imgtab_8@2x.webp 2x,
+                        ./images/portfolio/imgtab_8@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_8.jpg    1x,
+                        ./images/portfolio/imgmobile_8@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_8@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_8.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -298,12 +507,38 @@
             <li class="works__item">
               <a class="works__link" href="#">
                 <div class="works__wrap">
-                  <img
-                    class="works__image"
-                    src="./images/portfolio/img9.jpg"
-                    alt="Зображення сайту"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/imgdeskstop_9.webp    1x,
+                        ./images/portfolio/imgdeskstop_9@2x.webp 2x,
+                        ./images/portfolio/imgdeskstop_9@3x.webp 3x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgtab_9.webp    1x,
+                        ./images/portfolio/imgtab_9@2x.webp 2x,
+                        ./images/portfolio/imgtab_9@3x.webp 3x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/imgmobile_9.jpg    1x,
+                        ./images/portfolio/imgmobile_9@2x.jpg 2x,
+                        ./images/portfolio/imgmobile_9@3x.jpg 3x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="works__image"
+                      src="./images/portfolio/imgmobile_9.jpg"
+                      alt="Веб-сайт на ноутбуці"
+                      width="450"
+                    />
+                  </picture>
                   <p class="works__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи

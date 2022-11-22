@@ -15,7 +15,8 @@
   background-color: $footer-background-color;
 
   @include retina-2 {
-    background-image: url(../images/hero/mobile_hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/mobile_hero@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -28,7 +29,8 @@
     background-repeat: no-repeat;
 
     @include retina-2 {
-      background-image: url(../images/hero/tablet_hero@2x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/tablet_hero@2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -41,13 +43,18 @@
     background-repeat: no-repeat;
 
     @include retina-2 {
-      background-image: url(../images/hero/desktop_hero@2x.jpg);
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/desktop_hero@2x.jpg);
     }
   }
 }
 .container {
 }
 .hero__title {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -59,7 +66,7 @@
   color: $hero-title-color;
 
   @media screen and (min-width: 1200px) {
-    width: 696px;
+    max-width: 696px;
     margin-left: auto;
     margin-right: auto;
 
