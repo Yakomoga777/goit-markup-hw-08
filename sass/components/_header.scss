@@ -1,8 +1,10 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header {
   display: block;
   align-items: center;
-
-  border-bottom: 1px solid #ececec;
 
   &.container {
     position: relative;

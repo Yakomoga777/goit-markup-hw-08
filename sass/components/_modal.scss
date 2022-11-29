@@ -25,7 +25,6 @@
   width: 95%;
   max-height: 609px;
   max-width: 450px;
-  overflow: scroll;
 
   // width: 450px;
   // height: 609px;
@@ -36,10 +35,23 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 1200px) {
     max-width: 528px;
     max-height: 581px;
   }
+  @media screen and (max-width: 1200px) {
+    overflow: scroll;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.5);
+  border-radius: 100%;
 }
 .modal__btn {
   position: absolute;
